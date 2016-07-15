@@ -7,7 +7,7 @@ int binarySearch(int arr[], int n, int x) {
   int index = n/2, lower = 0, upper = n;
   for(int i = n; i > 0; i /= 2) {
     if(x == arr[index]) {
-      return x;
+      return index;
     }
     else if(x > arr[index]) {
       lower = index;
@@ -20,6 +20,8 @@ int binarySearch(int arr[], int n, int x) {
   }
   return -1;
 }
+
+int recursiveBinarySearch(int arr[], int n, int x)
 
 int main() {
   int arr1[5] = {1, 2, 3, 4, 5};
