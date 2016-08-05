@@ -15,6 +15,7 @@ class List {
     Node *head = NULL;
 };
 
+
 void List::insert(int data) {
   Node *insertingPtr = new Node(data);
   if(!head || data < head->data) {
